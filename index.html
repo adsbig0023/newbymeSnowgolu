@@ -1,253 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>𝗚𝗔𝗨𝗧𝗔𝗠 𝗞𝗨𝗠𝗔𝗥 𝗝𝗛𝗔 ™</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anita Desai Official</title>
+    <!-- Premium Google Web Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
 
-<script>
-const META_PIXEL_ID="921514237315320";
-const TELEGRAM_LINK="https://t.me/+94lPfW5vlag3NDA1";
-const AGENCY_LINK="https://t.me/+cvb_x5G0F5MwY2Fl";
-</script>
+        body {
+            background-color: #030a16; /* Deep midnight canvas */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+        .card {
+            background-color: #061124; /* UI container background */
+            width: 100%;
+            max-width: 440px;
+            border-radius: 40px;
+            padding: 40px 24px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            position: relative;
+        }
 
-window.addEventListener("DOMContentLoaded",()=>{
-if(typeof fbq!=="undefined"){
-fbq("init",META_PIXEL_ID);
-fbq("track","PageView");
-}
-});
-</script>
+        /* Avatar Container & Verified Badge Layout */
+        .profile-container {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 25px auto;
+        }
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #1a365d;
+            background-color: #111; /* Fallback if link breaks */
+        }
 
-body{
-min-height:100vh;
-background:#05050a;
-font-family:Arial,sans-serif;
-color:white;
-overflow:hidden;
-}
+        .verified-badge {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            background-color: #3b82f6; /* Telegram verified blue tint */
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #061124;
+        }
 
-.aurora{
-position:fixed;
-inset:0;
-overflow:hidden;
-pointer-events:none;
-}
+        .verified-badge svg {
+            width: 14px;
+            height: 14px;
+            fill: white;
+        }
 
-.aurora div{
-position:absolute;
-border-radius:50%;
-filter:blur(90px);
-}
+        /* Hero Typography Profile Titles */
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            color: #ffffff;
+        }
 
-.a{width:350px;height:350px;top:-130px;left:-100px;background:#6d3cff;opacity:.45}
-.b{width:330px;height:330px;right:-120px;bottom:-80px;background:#00b8ff;opacity:.35}
-.c{width:230px;height:230px;left:35%;top:40%;background:#ff37c8;opacity:.18}
+        .sub-title {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #5c93ed;
+            margin-top: 4px;
+            margin-bottom: 22px;
+        }
 
-.wrap{
-position:relative;
-z-index:2;
-min-height:100vh;
-width:100%;
-max-width:600px;
-margin:auto;
-padding:20px;
-display:flex;
-align-items:center;
-}
+        /* Headline Pill Badge Component */
+        .expert-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: rgba(26, 54, 93, 0.4);
+            border: 1px solid rgba(92, 147, 237, 0.2);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #8da2c4;
+            margin-bottom: 35px;
+        }
 
-.card{
-width:100%;
-text-align:center;
-padding:38px 25px;
-border:1px solid rgba(255,255,255,.15);
-border-radius:40px;
-background:rgba(255,255,255,.065);
-backdrop-filter:blur(25px);
--webkit-backdrop-filter:blur(25px);
-box-shadow:0 30px 100px rgba(0,0,0,.5);
-}
+        /* Metric Highlights Triple Grid Block */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
 
-.logo{
-width:88px;
-height:88px;
-border-radius:50%;
-object-fit:cover;
-border:2px solid rgba(255,255,255,.25);
-box-shadow:0 0 40px rgba(110,80,255,.35);
-margin-bottom:25px;
-}
+        .grid-box {
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 18px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-.small{
-font-size:10px;
-letter-spacing:4px;
-color:#aaa8bd;
-}
+        .grid-top {
+            font-size: 20px;
+            font-weight: 700;
+            color: #5c93ed;
+        }
 
-h1{
-font-size:clamp(40px,10vw,67px);
-line-height:.95;
-letter-spacing:-3px;
-margin:20px 0;
-}
+        .grid-bottom {
+            font-size: 10px;
+            letter-spacing: 1px;
+            color: #4f617d;
+            margin-top: 5px;
+            font-weight: 600;
+        }
 
-.desc{
-color:#aaa8b8;
-font-size:14px;
-line-height:1.7;
-max-width:440px;
-margin:auto;
-}
+        /* Main Conversion Action Anchor Button */
+        .cta-btn {
+            background: linear-gradient(90deg, #1d4ed8 0%, #3b82f6 100%);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            box-shadow: 0 12px 30px rgba(29, 78, 216, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 40px;
+        }
 
-.orbit{
-width:150px;
-height:150px;
-border:1px solid rgba(255,255,255,.12);
-border-radius:50%;
-margin:30px auto;
-display:flex;
-align-items:center;
-justify-content:center;
-position:relative;
-}
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(29, 78, 216, 0.5);
+        }
 
-.orbit:before,
-.orbit:after{
-content:"";
-position:absolute;
-border-radius:50%;
-}
+        .cta-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: white;
+        }
 
-.orbit:before{
-width:9px;
-height:9px;
-background:#8f6cff;
-box-shadow:0 0 20px #8f6cff;
-top:-4px;
-left:50%;
-}
+        /* Vertical Core Feature Row Elements */
+        .list-container {
+            text-align: left;
+            padding: 0 10px;
+            margin-bottom: 35px;
+        }
 
-.orbit:after{
-width:7px;
-height:7px;
-background:#19cfff;
-box-shadow:0 0 18px #19cfff;
-bottom:20px;
-right:3px;
-}
+        .list-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        }
 
-.orbit span{
-font-size:10px;
-letter-spacing:2px;
-color:#bdb9d0;
-}
+        .list-item:last-child {
+            border-bottom: none;
+        }
 
-.cta{
-display:block;
-text-decoration:none;
-color:white;
-padding:18px;
-border-radius:17px;
-font-size:13px;
-font-weight:700;
-background:linear-gradient(100deg,#7547ff,#087fff);
-box-shadow:0 15px 40px rgba(79,72,255,.25);
-transition:.3s;
-}
+        .icon-box {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            font-size: 16px;
+        }
 
-.cta:hover{
-transform:translateY(-3px);
-box-shadow:0 20px 50px rgba(79,72,255,.4);
-}
+        .list-text {
+            font-size: 14px;
+            color: #8da2c4;
+            font-weight: 500;
+        }
 
-.note{
-font-size:9px;
-color:#656273;
-line-height:1.5;
-margin-top:17px;
-}
+        /* Auxiliary Validation Tags Section */
+        .bottom-tags {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
 
-.agency{
-font-size:9px;
-margin-top:20px;
-}
+        .mini-tag {
+            background-color: rgba(255, 255, 255, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            color: #4f617d;
+            font-weight: 500;
+        }
 
-.agency a{
-color:#666375;
-text-decoration:none;
-}
+        /* Horizontal Spacer Vector Split */
+        .line {
+            border: 0;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.06);
+            margin-bottom: 25px;
+        }
 
-@media(max-width:400px){
-.card{padding:30px 18px}
-}
-</style>
+        /* Agency Brand Info Panel Footer Section */
+        .footer-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5px;
+        }
+
+        .footer-left {
+            font-size: 11px;
+            color: #33435c;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .agency-badge {
+            border: 1px solid rgba(92, 147, 237, 0.3);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #5c93ed;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="aurora">
-<div class="a"></div>
-<div class="b"></div>
-<div class="c"></div>
-</div>
+    <div class="card">
+        
+        <!-- Profile Picture & Verified Check Assembly -->
+        <!-- ACTION REQUIRED: Exchange 'avatar.jpg' with your explicit photo resource web link -->
+        <div class="profile-container">
+            <img src="avatar.jpg" alt="Anita Desai" class="profile-img">
+            <div class="verified-badge">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+        </div>
 
-<div class="wrap">
-<div class="card">
+        <!-- Channel Headings -->
+        <h1 class="main-title">ANITA DESAI</h1>
+        <h2 class="sub-title">OFFICIAL</h2>
 
-<img src="logo.png" class="logo" alt="Community Logo">
+        <!-- Role Badge Info Line -->
+        <div class="expert-tag">
+            <span style="color: #5c93ed;">✦</span> Index Trading Expert
+        </div>
 
-<div class="small">THE INNER CIRCLE</div>
+        <!-- Metric Parameter Matrix Summary Boxes -->
+        <div class="features-grid">
+            <div class="grid-box">
+                <span class="grid-top">24/7</span>
+                <span class="grid-bottom">UPDATES</span>
+            </div>
+            <div class="grid-box">
+                <span class="grid-top" style="color: #ffffff;">Free</span>
+                <span class="grid-bottom">TO JOIN</span>
+            </div>
+            <div class="grid-box">
+                <span class="grid-top" style="color: #ffffff;">Live</span>
+                <span class="grid-bottom">CALLS</span>
+            </div>
+        </div>
 
-<h1>Stay close to the 𝗚𝗔𝗨𝗧𝗔𝗠 𝗞𝗨𝗠𝗔𝗥 𝗝𝗛𝗔 ™
-.</h1>
+        <!-- Interactive Direct Gateway Connect Link -->
+        <!-- ACTION REQUIRED: Insert your exact destination URL path configuration directly inside href="..." below -->
+        <a href="https://t.me" class="cta-btn" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            JOIN TELEGRAM CHANNEL
+        </a>
 
-<p class="desc">
-A Telegram community for market conversations,
-educational insights and regular updates.
-</p>
+        <!-- Profile Checklist Core Perks Meta Container -->
+        <div class="list-container">
+            <div class="list-item">
+                <span class="icon-box">📊</span>
+                <span class="list-text">Market Insights & Discussions</span>
+            </div>
+            <div class="list-item">
+                <span class="icon-box">🎓</span>
+                <span class="list-text">Learn with Experts</span>
+            </div>
+            <div class="list-item">
+                <span class="icon-box">⚡</span>
+                <span class="list-text">Practical Trading Strategies</span>
+            </div>
+        </div>
 
-<div class="orbit">
-<span>MARKET<br>COMMUNITY</span>
-</div>
-
-<a href="#" id="telegramBtn" class="cta">
-ENTER TELEGRAM →
-</a>
-
-<div class="note">
-Educational information only. No guaranteed investment returns.
-</div>
-
-<div class="agency">
-<a href="#" id="agencyLink">Ads managed by Snow Ads Agency</a>
-</div>
-
-</div>
-</div>
-
-<script>
-document.getElementById("telegramBtn").href=TELEGRAM_LINK;
-document.getElementById("agencyLink").href=AGENCY_LINK;
-
-document.getElementById("telegramBtn").addEventListener("click",()=>{
-if(typeof fbq!=="undefined"){
-fbq("trackCustom","TelegramJoinClick");
-}
-});
-</script>
-
-</body>
-</html>
+        <!-- Bottom Proof / Validation Badges Container -->
+        <div class="bottom-tags">
